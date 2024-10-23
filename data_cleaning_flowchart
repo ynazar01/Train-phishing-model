@@ -1,0 +1,12 @@
+// Data Cleaning Flowchart
+digraph {
+	A [label="Load Dataset"]
+	B [label="Remove Missing Data"]
+	C [label="Clean Text (Remove Punctuation, Lowercase, Remove Stopwords)"]
+	D [label="Feature Extraction Using TF-IDF"]
+	E [label="Balance Dataset Using SMOTE"]
+	A -> B
+	B -> C
+	C -> D
+	D -> E
+}

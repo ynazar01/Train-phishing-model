@@ -1,0 +1,22 @@
+// Phishing Detection Model Workflow
+digraph {
+	A [label="Load Dataset"]
+	B [label="Data Preprocessing"]
+	C [label="Text Cleaning"]
+	D [label="Convert Text to TF-IDF Features"]
+	E [label="Balance Dataset with SMOTE"]
+	F [label="Split Dataset into Training and Testing Sets"]
+	G [label="Train Models (Logistic Regression, Random Forest, SVM)"]
+	H [label="Evaluate Models"]
+	I [label="Plot Confusion Matrices"]
+	J [label="Display Predictions"]
+	A -> B
+	B -> C
+	C -> D
+	D -> E
+	E -> F
+	F -> G
+	G -> H
+	H -> I
+	H -> J
+}
